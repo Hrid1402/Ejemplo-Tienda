@@ -1,8 +1,11 @@
 package Main;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 import CSV.CSV_import;
-import java.io.*;
-import java.util.*;
 import Clases.Producto;
 
 
@@ -24,6 +27,7 @@ public class EjemploTienda {
             System.out.println("1. Lista simple de productos");
             System.out.println("2. Lista detallada de productos");
             System.out.println("3. Buscar producto por nombre");
+            System.out.println("4. Buscar producto por precio");
             System.out.println("0. Salir");
             System.out.print("Elige una opción: ");
 
@@ -47,6 +51,11 @@ public class EjemploTienda {
                 case 3:
                     separador();
                     buscarProducto(productos);
+                    continuar();
+                    break;
+                case 4:
+                    separador();
+                    buscarProductoPrecio(productos);
                     continuar();
                     break;
                 case 0:
@@ -92,10 +101,25 @@ public class EjemploTienda {
             System.out.println("No se encontró ningún producto con ese nombre.");
         }
     }
-    
+
+    static void buscarProductoPrecio(ArrayList<Producto> productos) throws IOException{
+        System.out.print("Ingrese el precio del producto a buscar: ");
+        double precioBuscado = Double.parseDouble(br.readLine());
+
+        boolean encontrado = false;
+        for (Producto p: productos) {
+            if(p.getPrecio()==precioBuscado) {
+                System.out.println("Producto encontrado: "+p);
+                encontrado = true;
+            }
+        }
+        if(!encontrado){
+            System.out.println("No se encontró ningún producto con ese precio.");
+        }
+    }
     
     static void separador(){
-        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
     
     static void continuar()throws IOException{
