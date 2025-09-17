@@ -1,11 +1,51 @@
-nombre,imagen,marca,precio,stock
-Laptop Gamer,laptop.jpg,Asus,1500.00,10
-Smartphone Galaxy S24,galaxy_s24.png,Samsung,999.99,25
-Auriculares Bluetooth,auriculares.jpg,Sony,120.50,50
-Tablet iPad Pro,ipad_pro.png,Apple,1350.00,8
-Monitor 27,monitor27.jpg,LG,320.00,15
-Teclado Mecánico,teclado.jpg,HyperX,95.99,40
-Mouse Inalámbrico,mouse.png,Logitech,45.50,60
-Impresora Multifuncional,impresora.jpg,HP,220.00,12
-Consola PlayStation 5,ps5.png,Sony,599.99,20
-Smartwatch Series 9,smartwatch.jpg,Apple,399.99,18
+categoria,dimensiones,especificaciones,idproducto,imagen,marca,modelo,nombre,peso,precio,stock
+Laptop,35x24x2 cm,RAM 8GB SSD 512GB,PROD001,img/laptop_asus.png,ASUS,X515EA-BQ312,Laptop ASUS X515,1.8,2500.50,10
+Laptop,36x25x2.2 cm,RAM 16GB SSD 1TB,PROD002,img/dell_xps13.png,Dell,XPS 13,Laptop Dell XPS 13,1.3,4800.00,7
+Laptop,38x26x2.5 cm,RAM 8GB HDD 1TB,PROD003,img/hp_pavilion.png,HP,Pavilion 15,Laptop HP Pavilion,2.0,3200.00,12
+Laptop,34x23x1.8 cm,RAM 32GB SSD 1TB,PROD004,img/macbook_pro.png,Apple,MacBook Pro,Laptop Apple MacBook Pro,1.4,7200.00,5
+Laptop,35x24x2 cm,RAM 8GB SSD 256GB,PROD005,img/acer_aspire.png,Acer,Aspire 5,Laptop Acer Aspire 5,1.7,2200.00,14
+Smartphone,15x7x0.8 cm,128GB 6GB RAM,PROD006,img/samsung_a32.png,Samsung,Galaxy A32,Smartphone Samsung A32,0.2,1200.00,25
+Smartphone,16x7.5x0.9 cm,256GB 8GB RAM,PROD007,img/iphone_13.png,Apple,iPhone 13,Smartphone iPhone 13,0.18,4200.00,20
+Smartphone,16x7.6x0.9 cm,512GB 12GB RAM,PROD008,img/samsung_s22.png,Samsung,Galaxy S22,Smartphone Galaxy S22,0.21,4800.00,15
+Smartphone,15x7.1x0.8 cm,64GB 4GB RAM,PROD009,img/xiaomi_redmi_note10.png,Xiaomi,Redmi Note 10,Smartphone Xiaomi Redmi Note 10,0.19,900.00,40
+Smartphone,15x7.2x0.9 cm,128GB 6GB RAM,PROD010,img/motorola_g60.png,Motorola,Moto G60,Smartphone Motorola G60,0.22,1100.00,18
+Tablet,25x16x0.7 cm,64GB 4GB RAM,PROD011,img/ipad_9gen.png,Apple,A2602,iPad 9ª Generación,0.5,1800.00,15
+Tablet,24x15x0.8 cm,128GB 6GB RAM,PROD012,img/samsung_tab_s7.png,Samsung,Galaxy Tab S7,Tablet Samsung Tab S7,0.55,2400.00,10
+Tablet,26x17x0.8 cm,32GB 3GB RAM,PROD013,img/lenovo_tab_m10.png,Lenovo,Tab M10,Tablet Lenovo Tab M10,0.48,950.00,20
+Tablet,28x18x0.9 cm,256GB 8GB RAM,PROD014,img/ipad_pro.png,Apple,Pro 12.9,iPad Pro 12.9,0.65,4800.00,8
+Tablet,23x15x0.7 cm,64GB 4GB RAM,PROD015,img/huawei_matepad.png,Huawei,MatePad,Tablet Huawei MatePad,0.5,1600.00,12
+Monitor,55x32x5 cm,24'' Full HD LED,PROD016,img/lg_24fhd.png,LG,24MP60G,Monitor LG 24'',3.2,700.00,12
+Monitor,61x36x6 cm,27'' QHD IPS,PROD017,img/dell_ultrasharp.png,Dell,U2722D,Monitor Dell UltraSharp 27'',4.5,1800.00,9
+Monitor,70x40x7 cm,32'' 4K UHD,PROD018,img/samsung_uhd32.png,Samsung,U32R590,Monitor Samsung 32'',5.8,2200.00,6
+Monitor,48x28x4 cm,21.5'' Full HD,PROD019,img/acer_fullhd.png,Acer,SA220Q,Monitor Acer 21.5'',2.8,600.00,15
+Monitor,80x45x8 cm,34'' UltraWide QHD,PROD020,img/lg_ultrawide.png,LG,34WN80C,Monitor LG UltraWide 34'',7.2,3200.00,5
+Mouse,11x6x4 cm,Óptico Inalámbrico,PROD021,img/logitech_m185.png,Logitech,M185,Mouse Logitech Inalámbrico,0.1,70.00,50
+Mouse,12x7x4 cm,Gamer RGB 16000DPI,PROD022,img/razer_deathadder.png,Razer,DeathAdder,Mouse Razer DeathAdder,0.12,220.00,25
+Mouse,10x6x3.5 cm,Bluetooth Multi-Device,PROD023,img/microsoft_mouse.png,Microsoft,Modern Mobile Mouse,Mouse Microsoft,0.09,150.00,20
+Mouse,11x6x4 cm,Cableado 2400DPI,PROD024,img/hp_mouse.png,HP,X1500,Mouse HP X1500,0.1,50.00,40
+Mouse,12x6x4 cm,Gamer 7200DPI,PROD025,img/redragon_mouse.png,Redragon,Cobra,Mouse Redragon Cobra,0.11,120.00,30
+Teclado,44x13x3 cm,Mecánico RGB Switch Red,PROD026,img/redragon_k552.png,Redragon,K552,Teclado Redragon Kumara,0.9,180.00,20
+Teclado,45x14x3 cm,Mecánico Switch Blue,PROD027,img/logitech_g413.png,Logitech,G413,Teclado Logitech G413,1.1,280.00,15
+Teclado,43x12x2.5 cm,Inalámbrico con Touchpad,PROD028,img/microsoft_allinone.png,Microsoft,All-in-One,Teclado Microsoft All-in-One,0.6,220.00,18
+Teclado,44x13x3 cm,Mecánico Low Profile RGB,PROD029,img/corsair_k70.png,Corsair,K70,Teclado Corsair K70,1.2,520.00,10
+Teclado,42x12x2.8 cm,Membrana estándar,PROD030,img/hp_teclado.png,HP,K1500,Teclado HP K1500,0.7,60.00,35
+Auriculares,20x18x8 cm,Bluetooth 5.0 Cancelación Ruido,PROD031,img/sony_whch710n.png,Sony,WH-CH710N,Auriculares Sony Inalámbricos,0.25,550.00,18
+Auriculares,19x16x7 cm,Gamer 7.1 Surround,PROD032,img/hyperx_cloud2.png,HyperX,Cloud II,Auriculares HyperX Cloud II,0.35,380.00,22
+Auriculares,18x15x6 cm,Inalámbricos con micrófono,PROD033,img/logitech_h600.png,Logitech,H600,Auriculares Logitech H600,0.2,280.00,15
+Auriculares,17x15x6 cm,Bluetooth True Wireless,PROD034,img/apple_airpods.png,Apple,AirPods Pro,Auriculares Apple AirPods Pro,0.05,950.00,25
+Auriculares,18x16x7 cm,Bluetooth deportivos,PROD035,img/jbl_tune500bt.png,JBL,Tune 500BT,Auriculares JBL Tune 500BT,0.15,200.00,30
+Disco Duro,10x7x1.5 cm,1TB USB 3.0,PROD036,img/wd_elements.png,Western Digital,Elements,Disco Duro Externo WD,0.23,280.00,30
+Disco Duro,10x7x1.5 cm,2TB USB 3.0,PROD037,img/seagate_expansion.png,Seagate,Expansion,Disco Duro Externo Seagate,0.24,380.00,25
+SSD,8x2x0.7 cm,SSD NVMe 1TB,PROD038,img/samsung_970evo.png,Samsung,970 EVO Plus,SSD Samsung 970 EVO Plus,0.05,650.00,20
+SSD,10x7x0.7 cm,SSD SATA 500GB,PROD039,img/kingston_a400.png,Kingston,A400,SSD Kingston A400,0.06,220.00,35
+SSD,10x7x0.7 cm,SSD SATA 1TB,PROD040,img/crucial_mx500.png,Crucial,MX500,SSD Crucial MX500,0.07,350.00,28
+Memoria RAM,13x3x0.5 cm,DDR4 16GB 3200MHz,PROD041,img/corsair_vengeance.png,Corsair,Vengeance LPX,Memoria RAM Corsair,0.04,350.00,40
+Memoria RAM,13x3x0.5 cm,DDR4 8GB 2666MHz,PROD042,img/kingston_hyperx.png,Kingston,HyperX Fury,Memoria RAM Kingston HyperX,0.04,180.00,50
+Memoria RAM,13x3x0.5 cm,DDR5 32GB 5200MHz,PROD043,img/gskill_tridentz.png,G.Skill,Trident Z5,Memoria RAM G.Skill,0.05,850.00,15
+Memoria RAM,13x3x0.5 cm,DDR4 4GB 2400MHz,PROD044,img/patriot_signature.png,Patriot,Signature,Memoria RAM Patriot,0.03,90.00,45
+Memoria RAM,13x3x0.5 cm,DDR4 32GB 3200MHz,PROD045,img/adata_xpg.png,ADATA,XPG,Memoria RAM ADATA XPG,0.05,720.00,12
+Impresora,42x30x15 cm,Multifuncional Wi-Fi,PROD046,img/hp_deskjet.png,HP,DeskJet 2775,Impresora HP DeskJet,4.5,450.00,8
+Impresora,43x32x18 cm,Láser Monocromo,PROD047,img/brother_hl1212w.png,Brother,HL-1212W,Impresora Brother Láser,6.2,680.00,6
+Impresora,45x35x20 cm,Multifuncional Tinta,PROD048,img/canon_pixma.png,Canon,Pixma G3110,Impresora Canon Pixma,6.0,520.00,10
+Router,20x15x4 cm,Wi-Fi 6 Dual Band,PROD049,img/tp_link_ax10.png,TP-Link,Archer AX10,Router TP-Link Archer AX10,0.45,350.00,18
+Smartwatch,4x4x1 cm,Monitor de ritmo cardíaco,PROD050,img/amazfit_gtr.png,Amazfit,GTR 2,Smartwatch Amazfit GTR 2,0.06,680.00,20

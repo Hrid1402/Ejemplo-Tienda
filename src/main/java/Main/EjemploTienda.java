@@ -21,6 +21,7 @@ public class EjemploTienda {
         menu(productos);
     }
     static void menu(ArrayList<Producto> productos) throws IOException {
+        
         int opcion;
         do {
             System.out.println("\n=== MENÚ ===");
@@ -38,35 +39,33 @@ public class EjemploTienda {
             }
 
             switch (opcion) {
-                case 1 :
+                case 1 -> {
                     separador();
                     listaSimple(productos);
                     continuar();
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     separador();
                     listaDetallado(productos);
                     continuar();
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     separador();
                     buscarProducto(productos);
                     continuar();
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     separador();
                     buscarProductoPrecio(productos);
                     continuar();
-                    break;
-                case 0:
+                }
+                case 0 -> {
                     System.out.println("\n==============================");
                     System.out.println("   Gracias por usar el sistema");
                     System.out.println("        ¡Hasta pronto!");
                     System.out.println("==============================\n");
-                    break;
-                default:
-                    System.out.println("Opción no válida");
-                    break;
+                }
+                default -> System.out.println("Opción no válida");
             }
         } while (opcion!=0);
         System.exit(0);
@@ -103,18 +102,37 @@ public class EjemploTienda {
     }
 
     static void buscarProductoPrecio(ArrayList<Producto> productos) throws IOException{
-        System.out.print("Ingrese el precio del producto a buscar: ");
-        double precioBuscado = Double.parseDouble(br.readLine());
-
-        boolean encontrado = false;
-        for (Producto p: productos) {
-            if(p.getPrecio()==precioBuscado) {
-                System.out.println("Producto encontrado: "+p);
-                encontrado = true;
+        try {
+            double preciomin = -1, preciomax = -1;
+            while(preciomin < 0){
+                System.out.print("Ingrese el precio minimo del producto a buscar: ");
+                preciomin = Double.parseDouble(br.readLine());
+                if(preciomin < 0)
+                    System.out.println("Error: El precio mínimo no puede ser negativo.");
             }
-        }
-        if(!encontrado){
-            System.out.println("No se encontró ningún producto con ese precio.");
+            while(preciomax < 0){
+                System.out.print("Ingrese el precio máximo del producto a buscar: ");
+                preciomax = Double.parseDouble(br.readLine());
+                if(preciomax < 0)
+                    System.out.println("Error: El precio máximo no puede ser negativo.");
+            }
+            if (preciomin > preciomax) {
+                System.out.println("Error: El precio mínimo no puede ser mayor que el máximo.");
+                return;
+            }
+            
+            int encontrado = 0;
+            for (Producto p: productos) {
+                if(p.getPrecio() <= preciomax && p.getPrecio() >= preciomin) {
+                    System.out.println("Producto encontrado: "+p);
+                    encontrado++;
+                }
+            }
+            if(encontrado==0){
+                System.out.println("No se encontró ningún producto con ese rango de precio.");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Error: El precio debe ser un número.");
         }
     }
     
@@ -126,5 +144,5 @@ public class EjemploTienda {
         System.out.println("\nPresiona 'Enter' para continuar");
         br.readLine();
         
-    } 
+    }
 }
