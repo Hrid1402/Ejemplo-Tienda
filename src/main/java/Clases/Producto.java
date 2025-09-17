@@ -4,16 +4,16 @@ public class Producto {
     private String nombre;
     private String imagen;
     private String marca;
-    private double precio;
-    private int stock;
+    private String precio;
+    private String stock;
     private String idproducto;
     private String modelo;
     private String categoria;
     private String dimensiones;
     private String especificaciones;
-    private double peso;
+    private String peso;
 
-    public Producto(String categoria, String dimensiones, String especificaciones, String idproducto, String imagen, String marca, String modelo, String nombre, double peso, double precio, int stock) {
+    public Producto(String categoria, String dimensiones, String especificaciones, String idproducto, String imagen, String marca, String modelo, String nombre, String peso, String precio, String stock) {
         this.categoria = categoria;
         this.dimensiones = dimensiones;
         this.especificaciones = especificaciones;
@@ -51,19 +51,19 @@ public class Producto {
         this.marca = marca;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 
-    public int getStock() {
+    public String getStock() {
         return stock;
     }
 
-    public void setStock(int stock) {
+    public void setStock(String stock) {
         this.stock = stock;
     }
 
@@ -107,11 +107,11 @@ public class Producto {
         this.especificaciones = especificaciones;
     }
 
-    public double getPeso() {
+    public String getPeso() {
         return peso;
     }
 
-    public void setPeso(double peso) {
+    public void setPeso(String peso) {
         this.peso = peso;
     }
 

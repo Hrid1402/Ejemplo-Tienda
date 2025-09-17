@@ -23,17 +23,24 @@ public class TarjetaProducto extends VBox {
         imagenProducto = new ImageView();
         imagenProducto.setFitWidth(180);
         imagenProducto.setFitHeight(180);
-//        imagenProducto.setPreserveRatio(true);
+        imagenProducto.setPreserveRatio(true);
 
-        Image img = new Image(urlImagen, true);
-        imagenProducto.setImage(img);
+        try{
+            Image img = new Image(urlImagen, true);
+            imagenProducto.setImage(img);
+
+        } catch (Exception e){
+            Image img = new Image("file:src/main/resources/img/error.jpg", true);
+            imagenProducto.setImage(img);
+        }
+
         imagenProducto.getStyleClass().add("imagen-producto");
 
-        try (InputStream in = new URL(urlImagen).openStream()) {
-            System.out.println("Acceso OK: " + urlImagen);
-        } catch (Exception e) {
-            System.out.println("Error al acceder: " + e.getMessage());
-        }
+//        try (InputStream in = new URL(urlImagen).openStream()) {
+//            System.out.println("Acceso OK: " + urlImagen);
+//        } catch (Exception e) {
+//            System.out.println("Error al acceder: " + e.getMessage());
+//        }
 
 
 

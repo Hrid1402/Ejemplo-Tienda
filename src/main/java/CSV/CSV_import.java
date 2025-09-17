@@ -30,9 +30,9 @@ public class CSV_import {
                     String marca           = campos[5].trim();
                     String modelo          = campos[6].trim();
                     String nombre          = campos[7].trim();
-                    double peso            = Double.parseDouble(campos[8].trim());
-                    double precio          = Double.parseDouble(campos[9].trim());
-                    int stock              = Integer.parseInt(campos[10].trim());
+                    String peso            = campos[8].trim();
+                    String precio          = campos[9].trim();
+                    String stock           = campos[10].trim();
 
                     productos.add(new Producto(
                         categoria, dimensiones, especificaciones, idproducto,
