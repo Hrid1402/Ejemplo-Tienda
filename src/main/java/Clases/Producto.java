@@ -5,10 +5,10 @@ public class Producto {
     private String nombre;
     private String imagen;
     private String marca;
-    private double precio;
+    private String precio;
     private int stock;
 
-    public Producto(String nombre, String imagen, String marca, double precio, int stock) {
+    public Producto(String nombre, String imagen, String marca, String precio, int stock) {
         this.nombre = nombre;
         this.imagen = imagen;
         this.marca = marca;
@@ -40,13 +40,13 @@ public class Producto {
         this.marca = marca;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return precio;
     }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
+//
+//    public void setPrecio(double precio) {
+//        this.precio = precio;
+//    }
 
     public int getStock() {
         return stock;

@@ -7,10 +7,16 @@ import java.util.ArrayList;
 
 import CSV.CSV_import;
 import Clases.Producto;
+import Componentes.CabeceraSinLogIn;
+import Componentes.TarjetaProducto;
+import Paginas.PaginaDeProductos;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 
-
-public class EjemploTienda {
+public class EjemploTienda extends Application {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     
@@ -18,7 +24,8 @@ public class EjemploTienda {
     public static void main(String[] args)throws IOException{
 
         ArrayList<Producto> productos = CSV_import.cargarProductos();
-        menu(productos);
+//        menu(productos);
+        launch(args);
     }
     static void menu(ArrayList<Producto> productos) throws IOException {
         int opcion;
@@ -55,7 +62,7 @@ public class EjemploTienda {
                     break;
                 case 4:
                     separador();
-                    buscarProductoPrecio(productos);
+//                    buscarProductoPrecio(productos);
                     continuar();
                     break;
                 case 0:
@@ -102,21 +109,21 @@ public class EjemploTienda {
         }
     }
 
-    static void buscarProductoPrecio(ArrayList<Producto> productos) throws IOException{
-        System.out.print("Ingrese el precio del producto a buscar: ");
-        double precioBuscado = Double.parseDouble(br.readLine());
-
-        boolean encontrado = false;
-        for (Producto p: productos) {
-            if(p.getPrecio()==precioBuscado) {
-                System.out.println("Producto encontrado: "+p);
-                encontrado = true;
-            }
-        }
-        if(!encontrado){
-            System.out.println("No se encontró ningún producto con ese precio.");
-        }
-    }
+//    static void buscarProductoPrecio(ArrayList<Producto> productos) throws IOException{
+//        System.out.print("Ingrese el precio del producto a buscar: ");
+//        double precioBuscado = Double.parseDouble(br.readLine());
+//
+//        boolean encontrado = false;
+//        for (Producto p: productos) {
+//            if(p.getPrecio()==precioBuscado) {
+//                System.out.println("Producto encontrado: "+p);
+//                encontrado = true;
+//            }
+//        }
+//        if(!encontrado){
+//            System.out.println("No se encontró ningún producto con ese precio.");
+//        }
+//    }
     
     static void separador(){
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -126,5 +133,23 @@ public class EjemploTienda {
         System.out.println("\nPresiona 'Enter' para continuar");
         br.readLine();
         
-    } 
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+
+        CabeceraSinLogIn xd = new CabeceraSinLogIn();
+        PaginaDeProductos px = new PaginaDeProductos(CSV_import.cargarProductos());
+        BorderPane root = new BorderPane();
+
+        Scene scene = new Scene(root, 1400, 800);
+
+        root.setTop(xd);
+        root.setCenter(px);
+        stage.setTitle("Ejemplo Tienda");
+        scene.getStylesheets().add(getClass().getResource("/estilos/estilos.css").toExternalForm());
+
+        stage.setScene(scene);
+        stage.show();
+    }
 }

@@ -1,11 +1,11 @@
 nombre,imagen,marca,precio,stock
-Laptop Gamer,laptop.jpg,Asus,1500.00,10
-Smartphone Galaxy S24,galaxy_s24.png,Samsung,999.99,25
-Auriculares Bluetooth,auriculares.jpg,Sony,120.50,50
-Tablet iPad Pro,ipad_pro.png,Apple,1350.00,8
-Monitor 27,monitor27.jpg,LG,320.00,15
-Teclado Mecánico,teclado.jpg,HyperX,95.99,40
-Mouse Inalámbrico,mouse.png,Logitech,45.50,60
-Impresora Multifuncional,impresora.jpg,HP,220.00,12
-Consola PlayStation 5,ps5.png,Sony,599.99,20
-Smartwatch Series 9,smartwatch.jpg,Apple,399.99,18
+Laptop Gamer,https://m.media-amazon.com/images/I/71zuMSjwDfL._AC_UY327_QL65_.jpg,Asus,1500.00,10
+Smartphone Galaxy S24,https://m.media-amazon.com/images/I/517wd0xP59L._AC_UY327_QL65_.jpg,Samsung,999.99,25
+Auriculares Bluetooth,https://m.media-amazon.com/images/I/618hH1r87xL._AC_UY327_QL65_.jpg,Sony,120.50,50
+Tablet iPad Pro,https://m.media-amazon.com/images/I/71GxP7vwkhL._AC_UY327_QL65_.jpg,Apple,1350.00,8
+Monitor 27,https://m.media-amazon.com/images/I/61ag+47ajqL._AC_UY327_QL65_.jpg,LG,320.00,15
+Teclado Mecánico,https://m.media-amazon.com/images/I/71+fs+2vzoL._AC_UY327_QL65_.jpg,HyperX,95.99,40
+Mouse Inalámbrico,https://m.media-amazon.com/images/I/51WN5aXZWIL._AC_UY327_.jpg,Logitech,45.50,60
+Impresora Multifuncional,https://m.media-amazon.com/images/I/61ec0I5hH9L._AC_UY327_QL65_.jpg,HP,220.00,12
+Consola PlayStation 5,https://m.media-amazon.com/images/I/51dHYaHG6TL._AC_UY327_QL65_.jpg,Sony,599.99,20
+Smartwatch Series 9,https://m.media-amazon.com/images/I/71aXGgNCE9L._AC_UY327_QL65_.jpg,Apple,399.99,18
