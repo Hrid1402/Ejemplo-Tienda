@@ -1,3 +1,7 @@
-Main\EjemploTienda.class
+Paginas\PaginaDeProductos.class
+Componentes\CabeceraSinLogIn.class
 Clases\Producto.class
+Componentes\BarraDeBusqueda.class
+Main\EjemploTienda.class
+Componentes\TarjetaProducto.class
 CSV\CSV_import.class
