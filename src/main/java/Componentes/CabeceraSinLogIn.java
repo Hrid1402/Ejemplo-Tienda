@@ -1,5 +1,6 @@
 package Componentes;
 
+import java.util.function.Consumer;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -23,7 +24,7 @@ public class CabeceraSinLogIn extends HBox {
     private Button iniciarSesion;
     private Button registrate;
 
-    public CabeceraSinLogIn() {
+    public CabeceraSinLogIn(Consumer<String> onButtonClicked) {
         // Logo
         logo = new ImageView(new Image("file:src/main/resources/img/logo.png")); // usa tu imagen real
         logo.setFitWidth(120);
@@ -36,18 +37,17 @@ public class CabeceraSinLogIn extends HBox {
         // Categorías
         categorias = new HBox(20);
         categorias.getStyleClass().add("categorias");
-        categoria1 = new Button("Categoria 1");
-        categoria2 = new Button("Categoria 2");
-        categoria3 = new Button("Categoria 3");
+        
+        String[] nombres_categorias = {"Laptops", "Smartphones", "Tablets", "Monitores", "Mouses", "Teclados", "Auriculares"};
 
-        categoria1.getStyleClass().add("categoria");
-        categoria2.getStyleClass().add("categoria");
-        categoria3.getStyleClass().add("categoria");
-
-        categorias.getChildren().addAll(categoria1, categoria2, categoria3);
+        for (String nombre : nombres_categorias) {
+            Button categoria = new Button(nombre);
+            categoria.getStyleClass().add("categoria");
+            categorias.getChildren().add(categoria);
+        }
 
         // Barra de búsqueda
-        busqueda = new BarraDeBusqueda();
+        busqueda = new BarraDeBusqueda(onButtonClicked);
         busqueda.getStyleClass().add("barra-busqueda");
 
         // Usuario

@@ -23,7 +23,7 @@ public class EjemploTienda extends Application {
             
     public static void main(String[] args)throws IOException{
 
-        ArrayList<Producto> productos = CSV_import.cargarProductos();
+        //ArrayList<Producto> productos = CSV_import.cargarProductos();
 //        menu(productos);
         launch(args);
     }
@@ -133,13 +133,16 @@ public class EjemploTienda extends Application {
         System.out.println("\nPresiona 'Enter' para continuar");
         br.readLine();
         
-    }
+    }   
 
     @Override
     public void start(Stage stage) throws Exception {
 
-        CabeceraSinLogIn xd = new CabeceraSinLogIn();
+        
         PaginaDeProductos px = new PaginaDeProductos(CSV_import.cargarProductos());
+        CabeceraSinLogIn xd = new CabeceraSinLogIn(product_name->{
+            px.toSearch(product_name);
+        });
         BorderPane root = new BorderPane();
 
         Scene scene = new Scene(root, 1400, 800);
@@ -151,5 +154,9 @@ public class EjemploTienda extends Application {
 
         stage.setScene(scene);
         stage.show();
+    }
+    
+     public void search(){
+        System.out.println("Searching...");
     }
 }

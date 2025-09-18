@@ -1,29 +1,29 @@
 categoria,dimensiones,especificaciones,idproducto,imagen,marca,modelo,nombre,peso,precio,stock
-Laptop,35x24x2 cm,RAM 8GB SSD 512GB,PROD001,img/laptop_asus.png,ASUS,X515EA-BQ312,Laptop ASUS X515,1.8,2500.50,10
-Laptop,36x25x2.2 cm,RAM 16GB SSD 1TB,PROD002,img/dell_xps13.png,Dell,XPS 13,Laptop Dell XPS 13,1.3,4800.00,7
-Laptop,38x26x2.5 cm,RAM 8GB HDD 1TB,PROD003,img/hp_pavilion.png,HP,Pavilion 15,Laptop HP Pavilion,2.0,3200.00,12
-Laptop,34x23x1.8 cm,RAM 32GB SSD 1TB,PROD004,img/macbook_pro.png,Apple,MacBook Pro,Laptop Apple MacBook Pro,1.4,7200.00,5
-Laptop,35x24x2 cm,RAM 8GB SSD 256GB,PROD005,img/acer_aspire.png,Acer,Aspire 5,Laptop Acer Aspire 5,1.7,2200.00,14
-Smartphone,15x7x0.8 cm,128GB 6GB RAM,PROD006,img/samsung_a32.png,Samsung,Galaxy A32,Smartphone Samsung A32,0.2,1200.00,25
-Smartphone,16x7.5x0.9 cm,256GB 8GB RAM,PROD007,img/iphone_13.png,Apple,iPhone 13,Smartphone iPhone 13,0.18,4200.00,20
-Smartphone,16x7.6x0.9 cm,512GB 12GB RAM,PROD008,img/samsung_s22.png,Samsung,Galaxy S22,Smartphone Galaxy S22,0.21,4800.00,15
-Smartphone,15x7.1x0.8 cm,64GB 4GB RAM,PROD009,img/xiaomi_redmi_note10.png,Xiaomi,Redmi Note 10,Smartphone Xiaomi Redmi Note 10,0.19,900.00,40
-Smartphone,15x7.2x0.9 cm,128GB 6GB RAM,PROD010,img/motorola_g60.png,Motorola,Moto G60,Smartphone Motorola G60,0.22,1100.00,18
-Tablet,25x16x0.7 cm,64GB 4GB RAM,PROD011,img/ipad_9gen.png,Apple,A2602,iPad 9ª Generación,0.5,1800.00,15
-Tablet,24x15x0.8 cm,128GB 6GB RAM,PROD012,img/samsung_tab_s7.png,Samsung,Galaxy Tab S7,Tablet Samsung Tab S7,0.55,2400.00,10
-Tablet,26x17x0.8 cm,32GB 3GB RAM,PROD013,img/lenovo_tab_m10.png,Lenovo,Tab M10,Tablet Lenovo Tab M10,0.48,950.00,20
-Tablet,28x18x0.9 cm,256GB 8GB RAM,PROD014,img/ipad_pro.png,Apple,Pro 12.9,iPad Pro 12.9,0.65,4800.00,8
-Tablet,23x15x0.7 cm,64GB 4GB RAM,PROD015,img/huawei_matepad.png,Huawei,MatePad,Tablet Huawei MatePad,0.5,1600.00,12
-Monitor,55x32x5 cm,24'' Full HD LED,PROD016,img/lg_24fhd.png,LG,24MP60G,Monitor LG 24'',3.2,700.00,12
-Monitor,61x36x6 cm,27'' QHD IPS,PROD017,img/dell_ultrasharp.png,Dell,U2722D,Monitor Dell UltraSharp 27'',4.5,1800.00,9
-Monitor,70x40x7 cm,32'' 4K UHD,PROD018,img/samsung_uhd32.png,Samsung,U32R590,Monitor Samsung 32'',5.8,2200.00,6
-Monitor,48x28x4 cm,21.5'' Full HD,PROD019,img/acer_fullhd.png,Acer,SA220Q,Monitor Acer 21.5'',2.8,600.00,15
-Monitor,80x45x8 cm,34'' UltraWide QHD,PROD020,img/lg_ultrawide.png,LG,34WN80C,Monitor LG UltraWide 34'',7.2,3200.00,5
-Mouse,11x6x4 cm,Óptico Inalámbrico,PROD021,img/logitech_m185.png,Logitech,M185,Mouse Logitech Inalámbrico,0.1,70.00,50
-Mouse,12x7x4 cm,Gamer RGB 16000DPI,PROD022,img/razer_deathadder.png,Razer,DeathAdder,Mouse Razer DeathAdder,0.12,220.00,25
-Mouse,10x6x3.5 cm,Bluetooth Multi-Device,PROD023,img/microsoft_mouse.png,Microsoft,Modern Mobile Mouse,Mouse Microsoft,0.09,150.00,20
-Mouse,11x6x4 cm,Cableado 2400DPI,PROD024,img/hp_mouse.png,HP,X1500,Mouse HP X1500,0.1,50.00,40
-Mouse,12x6x4 cm,Gamer 7200DPI,PROD025,img/redragon_mouse.png,Redragon,Cobra,Mouse Redragon Cobra,0.11,120.00,30
+Laptop,35x24x2 cm,RAM 8GB SSD 512GB,PROD001,https://dlcdnwebimgs.asus.com/gain/5d95c7c8-c0b8-478b-8275-48471fa0ced1/,ASUS,X515EA-BQ312,Laptop ASUS X515,1.8,2500.50,10
+Laptop,36x25x2.2 cm,RAM 16GB SSD 1TB,PROD002,https://e7.pngegg.com/pngimages/465/338/png-clipart-laptop-dell-xps-13-9360-intel-core-i7-laptop-electronics-netbook.png,Dell,XPS 13,Laptop Dell XPS 13,1.3,4800.00,7
+Laptop,38x26x2.5 cm,RAM 8GB HDD 1TB,PROD003,https://pe-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/R/6R3R7LA-1_T1687790533.png,HP,Pavilion 15,Laptop HP Pavilion,2.0,3200.00,12
+Laptop,34x23x1.8 cm,RAM 32GB SSD 1TB,PROD004,https://e7.pngegg.com/pngimages/465/338/png-clipart-laptop-dell-xps-13-9360-intel-core-i7-laptop-electronics-netbook.png,Apple,MacBook Pro,Laptop Apple MacBook Pro,1.4,7200.00,5
+Laptop,35x24x2 cm,RAM 8GB SSD 256GB,PROD005,https://pe-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/R/6R3R7LA-1_T1687790533.png,Acer,Aspire 5,Laptop Acer Aspire 5,1.7,2200.00,14
+Smartphone,15x7x0.8 cm,128GB 6GB RAM,PROD006,https://static.vecteezy.com/system/resources/previews/025/273/745/non_2x/samsung-galaxy-a32-4g-mockup-free-png.png,Samsung,Galaxy A32,Smartphone Samsung A32,0.2,1200.00,25
+Smartphone,16x7.5x0.9 cm,256GB 8GB RAM,PROD007,https://storage.comprasmartphone.com/smartphones/apple-iphone-13-pro.png,Apple,iPhone 13,Smartphone iPhone 13,0.18,4200.00,20
+Smartphone,16x7.6x0.9 cm,512GB 12GB RAM,PROD008,https://storage.comprasmartphone.com/smartphones/samsung-galaxy-s22.png,Samsung,Galaxy S22,Smartphone Galaxy S22,0.21,4800.00,15
+Smartphone,15x7.1x0.8 cm,64GB 4GB RAM,PROD009,https://storage.comprasmartphone.com/smartphones/samsung-galaxy-s22.png,Xiaomi,Redmi Note 10,Smartphone Xiaomi Redmi Note 10,0.19,900.00,40
+Smartphone,15x7.2x0.9 cm,128GB 6GB RAM,PROD010,https://static.vecteezy.com/system/resources/previews/025/273/745/non_2x/samsung-galaxy-a32-4g-mockup-free-png.pnghttps://static.vecteezy.com/system/resources/previews/025/273/745/non_2x/samsung-galaxy-a32-4g-mockup-free-png.png,Motorola,Moto G60,Smartphone Motorola G60,0.22,1100.00,18
+Tablet,25x16x0.7 cm,64GB 4GB RAM,PROD011,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLEYHF-5cGna1sTTM1xltIIdiewWnm3GfzQ&s,Apple,A2602,iPad 9ª Generación,0.5,1800.00,15
+Tablet,24x15x0.8 cm,128GB 6GB RAM,PROD012,https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg,Samsung,Galaxy Tab S7,Tablet Samsung Tab S7,0.55,2400.00,10
+Tablet,26x17x0.8 cm,32GB 3GB RAM,PROD013,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLEYHF-5cGna1sTTM1xltIIdiewWnm3GfzQ&s,Lenovo,Tab M10,Tablet Lenovo Tab M10,0.48,950.00,20
+Tablet,28x18x0.9 cm,256GB 8GB RAM,PROD014,https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg,Apple,Pro 12.9,iPad Pro 12.9,0.65,4800.00,8
+Tablet,23x15x0.7 cm,64GB 4GB RAM,PROD015,https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg,Huawei,MatePad,Tablet Huawei MatePad,0.5,1600.00,12
+Monitor,55x32x5 cm,24'' Full HD LED,PROD016,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg,LG,24MP60G,Monitor LG 24'',3.2,700.00,12
+Monitor,61x36x6 cm,27'' QHD IPS,PROD017,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg,Dell,U2722D,Monitor Dell UltraSharp 27'',4.5,1800.00,9
+Monitor,70x40x7 cm,32'' 4K UHD,PROD018,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg,Samsung,U32R590,Monitor Samsung 32'',5.8,2200.00,6
+Monitor,48x28x4 cm,21.5'' Full HD,PROD019,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg,Acer,SA220Q,Monitor Acer 21.5'',2.8,600.00,15
+Monitor,80x45x8 cm,34'' UltraWide QHD,PROD020,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg,LG,34WN80C,Monitor LG UltraWide 34'',7.2,3200.00,5
+Mouse,11x6x4 cm,Óptico Inalámbrico,PROD021,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000,Logitech,M185,Mouse Logitech Inalámbrico,0.1,70.00,50
+Mouse,12x7x4 cm,Gamer RGB 16000DPI,PROD022,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000,Razer,DeathAdder,Mouse Razer DeathAdder,0.12,220.00,25
+Mouse,10x6x3.5 cm,Bluetooth Multi-Device,PROD023,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000,Microsoft,Modern Mobile Mouse,Mouse Microsoft,0.09,150.00,20
+Mouse,11x6x4 cm,Cableado 2400DPI,PROD024,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000,HP,X1500,Mouse HP X1500,0.1,50.00,40
+Mouse,12x6x4 cm,Gamer 7200DPI,PROD025,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000,Redragon,Cobra,Mouse Redragon Cobra,0.11,120.00,30
 Teclado,44x13x3 cm,Mecánico RGB Switch Red,PROD026,img/redragon_k552.png,Redragon,K552,Teclado Redragon Kumara,0.9,180.00,20
 Teclado,45x14x3 cm,Mecánico Switch Blue,PROD027,img/logitech_g413.png,Logitech,G413,Teclado Logitech G413,1.1,280.00,15
 Teclado,43x12x2.5 cm,Inalámbrico con Touchpad,PROD028,img/microsoft_allinone.png,Microsoft,All-in-One,Teclado Microsoft All-in-One,0.6,220.00,18
