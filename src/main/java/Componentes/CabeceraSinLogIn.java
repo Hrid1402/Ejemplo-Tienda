@@ -19,6 +19,8 @@ public class CabeceraSinLogIn extends HBox {
 
     private BarraDeBusqueda busqueda;
 
+    private Button carrito;
+
     private HBox usuario;
     private Button iniciarSesion;
     private Button registrate;
@@ -50,6 +52,10 @@ public class CabeceraSinLogIn extends HBox {
         busqueda = new BarraDeBusqueda();
         busqueda.getStyleClass().add("barra-busqueda");
 
+
+        carrito = new Button("🛒");
+
+
         // Usuario
         usuario = new HBox(10);
         usuario.getStyleClass().add("usuario");
@@ -65,6 +71,6 @@ public class CabeceraSinLogIn extends HBox {
         getStyleClass().add("cabecera");
 
 
-        getChildren().addAll(logo, nombreTienda, categorias, busqueda, usuario);
+        getChildren().addAll(logo, nombreTienda, categorias, busqueda, carrito, usuario);
     }
 }

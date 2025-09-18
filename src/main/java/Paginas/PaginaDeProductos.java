@@ -1,6 +1,7 @@
 package Paginas;
 
 import Clases.Producto;
+import Componentes.TarjetaCarrito;
 import Componentes.TarjetaProducto;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.FlowPane;
