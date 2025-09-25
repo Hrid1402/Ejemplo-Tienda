@@ -1,0 +1,51 @@
+idproducto,nombre,categoria,marca,precio,especificaciones,dimensiones,modelo,peso,stock,imagen
+PROD001,Laptop ASUS X515,Laptop,ASUS,2500.50,RAM 8GB SSD 512GB,35x24x2 cm,X515EA-BQ312,1.8,10,https://dlcdnwebimgs.asus.com/gain/5d95c7c8-c0b8-478b-8275-48471fa0ced1/
+PROD002,Laptop Dell XPS 13,Laptop,Dell,4800.00,RAM 16GB SSD 1TB,36x25x2.2 cm,XPS 13,1.3,7,https://e7.pngegg.com/pngimages/465/338/png-clipart-laptop-dell-xps-13-9360-intel-core-i7-laptop-electronics-netbook.png
+PROD003,Laptop HP Pavilion,Laptop,HP,3200.00,RAM 8GB HDD 1TB,38x26x2.5 cm,Pavilion 15,2.0,12,https://pe-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/R/6R3R7LA-1_T1687790533.png
+PROD004,Laptop Apple MacBook Pro,Laptop,Apple,7200.00,RAM 32GB SSD 1TB,34x23x1.8 cm,MacBook Pro,1.4,5,https://e7.pngegg.com/pngimages/465/338/png-clipart-laptop-dell-xps-13-9360-intel-core-i7-laptop-electronics-netbook.png
+PROD005,Laptop Acer Aspire 5,Laptop,Acer,2200.00,RAM 8GB SSD 256GB,35x24x2 cm,Aspire 5,1.7,14,https://pe-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/R/6R3R7LA-1_T1687790533.png
+PROD006,Smartphone Samsung A32,Smartphone,Samsung,1200.00,128GB 6GB RAM,15x7x0.8 cm,Galaxy A32,0.2,25,S
+PROD007,Smartphone iPhone 13,Smartphone,Apple,4200.00,256GB 8GB RAM,16x7.5x0.9 cm,iPhone 13,0.18,20,https://storage.comprasmartphone.com/smartphones/apple-iphone-13-pro.png
+PROD008,Smartphone Galaxy S22,Smartphone,Samsung,4800.00,512GB 12GB RAM,16x7.6x0.9 cm,Galaxy S22,0.21,15,https://storage.comprasmartphone.com/smartphones/samsung-galaxy-s22.png
+PROD009,Smartphone Xiaomi Redmi Note 10,Smartphone,Xiaomi,900.00,64GB 4GB RAM,15x7.1x0.8 cm,Redmi Note 10,0.19,40,https://storage.comprasmartphone.com/smartphones/samsung-galaxy-s22.png
+PROD010,Smartphone Motorola G60,Smartphone,Motorola,1100.00,128GB 6GB RAM,15x7.2x0.9 cm,Moto G60,0.22,18,https://static.vecteezy.com/system/resources/previews/025/273/745/non_2x/samsung-galaxy-a32-4g-mockup-free-png.pnghttps://static.vecteezy.com/system/resources/previews/025/273/745/non_2x/samsung-galaxy-a32-4g-mockup-free-png.png
+PROD011,iPad 9ª Generación,Tablet,Apple,1800.00,64GB 4GB RAM,25x16x0.7 cm,A2602,0.5,15,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLEYHF-5cGna1sTTM1xltIIdiewWnm3GfzQ&s
+PROD012,Tablet Samsung Tab S7,Tablet,Samsung,2400.00,128GB 6GB RAM,24x15x0.8 cm,Galaxy Tab S7,0.55,10,https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg
+PROD013,Tablet Lenovo Tab M10,Tablet,Lenovo,950.00,32GB 3GB RAM,26x17x0.8 cm,Tab M10,0.48,20,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLEYHF-5cGna1sTTM1xltIIdiewWnm3GfzQ&s
+PROD014,iPad Pro 12.9,Tablet,Apple,4800.00,256GB 8GB RAM,28x18x0.9 cm,Pro 12.9,0.65,8,https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg
+PROD015,Tablet Huawei MatePad,Tablet,Huawei,1600.00,64GB 4GB RAM,23x15x0.7 cm,MatePad,0.5,12,https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-s7-1.jpg
+PROD016,Monitor LG 24'',Monitor,LG,700.00,24'' Full HD LED,55x32x5 cm,24MP60G,3.2,12,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg
+PROD017,Monitor Dell UltraSharp 27'',Monitor,Dell,1800.00,27'' QHD IPS,61x36x6 cm,U2722D,4.5,9,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg
+PROD018,Monitor Samsung 32'',Monitor,Samsung,2200.00,32'' 4K UHD,70x40x7 cm,U32R590,5.8,6,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg
+PROD019,Monitor Acer 21.5'',Monitor,Acer,600.00,21.5'' Full HD,48x28x4 cm,SA220Q,2.8,15,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg
+PROD020,Monitor LG UltraWide 34'',Monitor,LG,3200.00,34'' UltraWide QHD,80x45x8 cm,34WN80C,7.2,5,https://www.lg.com/content/dam/channel/wcms/pa/images/monitores/24mk430h-b_awp_esps_pa_c/gallery/medium01.jpg
+PROD021,Mouse Logitech Inalámbrico,Mouse,Logitech,70.00,Óptico Inalámbrico,11x6x4 cm,M185,0.1,50,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000
+PROD022,Mouse Razer DeathAdder,Mouse,Razer,220.00,Gamer RGB 16000DPI,12x7x4 cm,DeathAdder,0.12,25,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000
+PROD023,Mouse Microsoft,Mouse,Microsoft,150.00,Bluetooth Multi-Device,10x6x3.5 cm,Modern Mobile Mouse,0.09,20,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000
+PROD024,Mouse HP X1500,Mouse,HP,50.00,Cableado 2400DPI,11x6x4 cm,X1500,0.1,40,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000
+PROD025,Mouse Redragon Cobra,Mouse,Redragon,120.00,Gamer 7200DPI,12x6x4 cm,Cobra,0.11,30,https://promart.vteximg.com.br/arquivos/ids/5286282-1000-1000/image-a8b621e32b10401a8190918e4c7f1098.jpg?v=637849457638570000
+PROD026,Teclado Redragon Kumara,Teclado,Redragon,180.00,Mecánico RGB Switch Red,44x13x3 cm,K552,0.9,20,img/redragon_k552.png
+PROD027,Teclado Logitech G413,Teclado,Logitech,280.00,Mecánico Switch Blue,45x14x3 cm,G413,1.1,15,img/logitech_g413.png
+PROD028,Teclado Microsoft All-in-One,Teclado,Microsoft,220.00,Inalámbrico con Touchpad,43x12x2.5 cm,All-in-One,0.6,18,img/microsoft_allinone.png
+PROD029,Teclado Corsair K70,Teclado,Corsair,520.00,Mecánico Low Profile RGB,44x13x3 cm,K70,1.2,10,img/corsair_k70.png
+PROD030,Teclado HP K1500,Teclado,HP,60.00,Membrana estándar,42x12x2.8 cm,K1500,0.7,35,img/hp_teclado.png
+PROD031,Auriculares Sony Inalámbricos,Auriculares,Sony,550.00,Bluetooth 5.0 Cancelación Ruido,20x18x8 cm,WH-CH710N,0.25,18,img/sony_whch710n.png
+PROD032,Auriculares HyperX Cloud II,Auriculares,HyperX,380.00,Gamer 7.1 Surround,19x16x7 cm,Cloud II,0.35,22,img/hyperx_cloud2.png
+PROD033,Auriculares Logitech H600,Auriculares,Logitech,280.00,Inalámbricos con micrófono,18x15x6 cm,H600,0.2,15,img/logitech_h600.png
+PROD034,Auriculares Apple AirPods Pro,Auriculares,Apple,950.00,Bluetooth True Wireless,17x15x6 cm,AirPods Pro,0.05,25,img/apple_airpods.png
+PROD035,Auriculares JBL Tune 500BT,Auriculares,JBL,200.00,Bluetooth deportivos,18x16x7 cm,Tune 500BT,0.15,30,img/jbl_tune500bt.png
+PROD036,Disco Duro Externo WD,Disco Duro,Western Digital,280.00,1TB USB 3.0,10x7x1.5 cm,Elements,0.23,30,img/wd_elements.png
+PROD037,Disco Duro Externo Seagate,Disco Duro,Seagate,380.00,2TB USB 3.0,10x7x1.5 cm,Expansion,0.24,25,img/seagate_expansion.png
+PROD038,SSD Samsung 970 EVO Plus,SSD,Samsung,650.00,SSD NVMe 1TB,8x2x0.7 cm,970 EVO Plus,0.05,20,img/samsung_970evo.png
+PROD039,SSD Kingston A400,SSD,Kingston,220.00,SSD SATA 500GB,10x7x0.7 cm,A400,0.06,35,img/kingston_a400.png
+PROD040,SSD Crucial MX500,SSD,Crucial,350.00,SSD SATA 1TB,10x7x0.7 cm,MX500,0.07,28,img/crucial_mx500.png
+PROD041,Memoria RAM Corsair,Memoria RAM,Corsair,350.00,DDR4 16GB 3200MHz,13x3x0.5 cm,Vengeance LPX,0.04,40,img/corsair_vengeance.png
+PROD042,Memoria RAM Kingston HyperX,Memoria RAM,Kingston,180.00,DDR4 8GB 2666MHz,13x3x0.5 cm,HyperX Fury,0.04,50,img/kingston_hyperx.png
+PROD043,Memoria RAM G.Skill,Memoria RAM,G.Skill,850.00,DDR5 32GB 5200MHz,13x3x0.5 cm,Trident Z5,0.05,15,img/gskill_tridentz.png
+PROD044,Memoria RAM Patriot,Memoria RAM,Patriot,90.00,DDR4 4GB 2400MHz,13x3x0.5 cm,Signature,0.03,45,img/patriot_signature.png
+PROD045,Memoria RAM ADATA XPG,Memoria RAM,ADATA,720.00,DDR4 32GB 3200MHz,13x3x0.5 cm,XPG,0.05,12,img/adata_xpg.png
+PROD046,Impresora HP DeskJet,Impresora,HP,450.00,Multifuncional Wi-Fi,42x30x15 cm,DeskJet 2775,4.5,8,img/hp_deskjet.png
+PROD047,Impresora Brother Láser,Impresora,Brother,680.00,Láser Monocromo,43x32x18 cm,HL-1212W,6.2,6,img/brother_hl1212w.png
+PROD048,Impresora Canon Pixma,Impresora,Canon,520.00,Multifuncional Tinta,45x35x20 cm,Pixma G3110,6.0,10,img/canon_pixma.png
+PROD049,Router TP-Link Archer AX10,Router,TP-Link,350.00,Wi-Fi 6 Dual Band,20x15x4 cm,Archer AX10,0.45,18,img/tp_link_ax10.png
+PROD050,Smartwatch Amazfit GTR 2,Smartwatch,Amazfit,680.00,Monitor de ritmo cardíaco,4x4x1 cm,GTR 2,0.06,20,img/amazfit_gtr.png
