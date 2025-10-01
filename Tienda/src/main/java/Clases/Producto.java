@@ -1,30 +1,38 @@
 package Clases;
 
 public class Producto {
+    private String idproducto;
     private String nombre;
     private String imagen;
     private String marca;
-    private String precio;
-    private String stock;
-    private String idproducto;
+    private double precio;
+    private int stock;
     private String modelo;
     private String categoria;
     private String dimensiones;
     private String especificaciones;
-    private String peso;
+    private double peso;
 
-    public Producto(String categoria, String dimensiones, String especificaciones, String idproducto, String imagen, String marca, String modelo, String nombre, String peso, String precio, String stock) {
+    public Producto(String idproducto, String nombre, String imagen, String marca, double precio, int stock, String modelo, String categoria, String dimensiones, String especificaciones, double peso) {
+        this.idproducto = idproducto;
+        this.nombre = nombre;
+        this.imagen = imagen;
+        this.marca = marca;
+        this.precio = precio;
+        this.stock = stock;
+        this.modelo = modelo;
         this.categoria = categoria;
         this.dimensiones = dimensiones;
         this.especificaciones = especificaciones;
-        this.idproducto = idproducto;
-        this.imagen = imagen;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.nombre = nombre;
         this.peso = peso;
-        this.precio = precio;
-        this.stock = stock;
+    }
+
+    public String getIdproducto() {
+        return idproducto;
+    }
+
+    public void setIdproducto(String idproducto) {
+        this.idproducto = idproducto;
     }
 
     public String getNombre() {
@@ -51,28 +59,20 @@ public class Producto {
         this.marca = marca;
     }
 
-    public String getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-    public String getStock() {
+    public int getStock() {
         return stock;
     }
 
-    public void setStock(String stock) {
+    public void setStock(int stock) {
         this.stock = stock;
-    }
-
-    public String getIdproducto() {
-        return idproducto;
-    }
-
-    public void setIdproducto(String idproducto) {
-        this.idproducto = idproducto;
     }
 
     public String getModelo() {
@@ -107,13 +107,14 @@ public class Producto {
         this.especificaciones = especificaciones;
     }
 
-    public String getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(String peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
+
 
     @Override
     public String toString() {

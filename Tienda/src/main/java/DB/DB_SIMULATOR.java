@@ -4,20 +4,28 @@ import Clases.Usuario;
 import java.util.ArrayList;
 
 public class DB_SIMULATOR {
+    
+    private static DB_SIMULATOR instance;
     private ArrayList<Producto> productos;
     private Usuario usuario = new Usuario("Pablo", false);
     
-    public DB_SIMULATOR() {
+    private DB_SIMULATOR() {
         System.out.println("setting up");
         productos = CSV_import.cargarProductos();
+    }   
+    public static DB_SIMULATOR getInstance(){
+        if (instance == null) {
+            instance = new DB_SIMULATOR();
+        }
+        return instance;
     }
+    
     public void printAllProducts(){
         for (Producto producto : productos) {
             System.out.println(producto);
         }
     }
     public ArrayList<Producto> getAllProducts(){
-        System.out.println("getting all products...");
         return productos;
     }
     

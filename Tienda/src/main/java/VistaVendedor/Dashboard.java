@@ -23,14 +23,12 @@ public class Dashboard extends javax.swing.JFrame {
     public Dashboard() {
         
         initComponents();
-        this.database = new DB_SIMULATOR();
-        this.usuario = new Usuario("Juan", true);
         //Detalles Producto panel 
-        DetallesProducto dp1 = new DetallesProducto();
-        dp1.setSize(508, 469);
-        dp1.setLocation (0, 0);
+        GestionProductos gdp = new GestionProductos();
+        gdp.setSize(508, 469);
+        gdp.setLocation (0, 0);
         content.removeAll();
-        content.add(dp1, BorderLayout.CENTER);
+        content.add(gdp, BorderLayout.CENTER);
         content.revalidate();
         content.repaint();
         
@@ -47,7 +45,6 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         btnListaProductos = new javax.swing.JButton();
-        btnDetallesProducto = new javax.swing.JButton();
         btnGestionProductos = new javax.swing.JButton();
         content = new javax.swing.JPanel();
 
@@ -57,13 +54,6 @@ public class Dashboard extends javax.swing.JFrame {
         btnListaProductos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListaProductosActionPerformed(evt);
-            }
-        });
-
-        btnDetallesProducto.setText("Detalles de producto");
-        btnDetallesProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDetallesProductoActionPerformed(evt);
             }
         });
 
@@ -93,7 +83,6 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnGestionProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnDetallesProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnListaProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -103,11 +92,9 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(btnListaProductos)
-                .addGap(18, 18, 18)
-                .addComponent(btnDetallesProducto)
-                .addGap(21, 21, 21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnGestionProductos)
-                .addContainerGap(324, Short.MAX_VALUE))
+                .addContainerGap(374, Short.MAX_VALUE))
             .addComponent(content, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -127,7 +114,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btnListaProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListaProductosActionPerformed
         //Lista Productos panel 
-        ListaProductos lp1 = new ListaProductos(database, usuario);
+        ListaProductos lp1 = new ListaProductos();
         lp1.setSize(508, 469);
         lp1.setLocation (0, 0);
         content.removeAll();
@@ -136,20 +123,9 @@ public class Dashboard extends javax.swing.JFrame {
         content.repaint();
     }//GEN-LAST:event_btnListaProductosActionPerformed
 
-    private void btnDetallesProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDetallesProductoActionPerformed
-        //Detalles Producto panel 
-        DetallesProducto dp1 = new DetallesProducto();
-        dp1.setSize(508, 469);
-        dp1.setLocation (0, 0);
-        content.removeAll();
-        content.add(dp1, BorderLayout.CENTER);
-        content.revalidate();
-        content.repaint();
-    }//GEN-LAST:event_btnDetallesProductoActionPerformed
-
     private void btnGestionProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionProductosActionPerformed
          //Gestion Productos panel
-        GestionProductos gp1 = new GestionProductos(database, usuario);
+        GestionProductos gp1 = new GestionProductos();
         gp1.setSize(508, 469);
         gp1.setLocation (0, 0);
         content.removeAll();
@@ -195,7 +171,6 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDetallesProducto;
     private javax.swing.JButton btnGestionProductos;
     private javax.swing.JButton btnListaProductos;
     private javax.swing.JPanel content;

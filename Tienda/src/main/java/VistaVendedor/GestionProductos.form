@@ -202,14 +202,11 @@
                                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="label_dimens" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="ImageRenderer" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
-                                          <Component id="jButton1" alignment="0" min="-2" pref="189" max="-2" attributes="0"/>
+                                          <Component id="btn_addList" alignment="0" min="-2" pref="189" max="-2" attributes="0"/>
                                           <Component id="label_stock" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="label_total" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel3" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel3" min="-2" pref="118" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -245,7 +242,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="label_total" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="btn_addList" min="-2" pref="38" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -288,12 +285,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="label_especif">
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="btn_addList">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Agregar lista"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_addListActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="label_stock">

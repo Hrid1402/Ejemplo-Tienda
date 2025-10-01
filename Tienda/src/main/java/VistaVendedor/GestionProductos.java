@@ -1,5 +1,6 @@
 package VistaVendedor;
 
+import Clases.ItemLista;
 import VistaAdministrador.*;
 import Clases.Producto;
 import Clases.Usuario;
@@ -21,43 +22,31 @@ import javax.swing.border.*;
 
 public class GestionProductos extends javax.swing.JPanel {
     private DB_SIMULATOR database;
-    private Usuario usuario;
     private Producto selectedProduct;
+    private Usuario usuario;
+    private boolean enLista;
     
-//    String[] categorias = {
-//        "Todo",
-//        "Laptop",
-//        "Smartphone",
-//        "Tablet",
-//        "Monitor",
-//        "Teclado",
-//        "Mouse",
-//        "Auriculares",
-//        "Impresora",
-//        "Router",
-//        "Disco Duro",
-//        "SSD",
-//        "Memoria RAM",
-//        "Smartwatch"
-//    };
-    /**
-     * Creates new form GestionProductos
-     */
-    public GestionProductos(DB_SIMULATOR db, Usuario u) {
+    public GestionProductos() {
         initComponents();
-        this.database = db;
-        this.usuario = u;
+        this.database = DB_SIMULATOR.getInstance();
+        this.usuario = database.getUsuario();
         setupTable();
-        //setupCategorias();
         updateTableData(database.getAllProducts()); 
     }
-
-//    private void setupCategorias(){
-//       categorias_box.removeAllItems();
-//        for (String c : categorias) {
-//            categorias_box.addItem(c);
-//        }
-//    }
+    
+    private void checkEnLista(){
+        enLista = usuario.productoEnLista(selectedProduct);
+        if(enLista){
+            ItemLista item = usuario.getItemById(selectedProduct.getIdproducto());
+            btn_addList.setText("Quitar de lista");
+            label_total.setText("Total: S/ "+ item.getPrecioTotal());
+            input_cantidad.setModel(new javax.swing.SpinnerNumberModel(item.getCantidadAgregada(), 1, selectedProduct.getStock(), 1));
+            input_cantidad.setEnabled(false);
+        }else{
+            btn_addList.setText("Agregar a lista");
+            updateProductData();
+        }
+    }
     
     private void updateProductData(){
         label_nombre.setText(selectedProduct.getNombre());
@@ -68,8 +57,8 @@ public class GestionProductos extends javax.swing.JPanel {
         label_especif.setText(selectedProduct.getEspecificaciones());
         
         label_total.setText("<html><br>Total:</br> S/ "+selectedProduct.getPrecio()+"</html>");
-        
-        input_cantidad.setModel(new javax.swing.SpinnerNumberModel(1, 1, Integer.parseInt(selectedProduct.getStock()), 1));
+        input_cantidad.setEnabled(true);
+        input_cantidad.setModel(new javax.swing.SpinnerNumberModel(1, 1, selectedProduct.getStock(), 1));
 
         try {
             int m=15; 
@@ -101,7 +90,6 @@ public class GestionProductos extends javax.swing.JPanel {
     }
     
     private void setupTable() {
-        //ProductsTable.removeColumn(ProductsTable.getColumnModel().getColumn(3));
         ProductsTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -111,6 +99,7 @@ public class GestionProductos extends javax.swing.JPanel {
                     System.out.println("Product id: " + productId);
                     selectedProduct = database.getProductById(productId);
                     updateProductData();
+                    checkEnLista();
                 }
             }
         });
@@ -122,7 +111,7 @@ public class GestionProductos extends javax.swing.JPanel {
 
         model.setRowCount(0);
         for (Producto p : productos) {
-            if (Integer.parseInt(p.getStock()) > 1) {
+            if (p.getStock() > 1) {
                model.addRow(new Object[]{p.getIdproducto(), p.getNombre(), p.getMarca(), p.getPrecio()});
             }
         }
@@ -151,7 +140,7 @@ public class GestionProductos extends javax.swing.JPanel {
         label_marca = new javax.swing.JLabel();
         label_precio = new javax.swing.JLabel();
         label_especif = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btn_addList = new javax.swing.JButton();
         label_stock = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         label_total = new javax.swing.JLabel();
@@ -218,10 +207,10 @@ public class GestionProductos extends javax.swing.JPanel {
 
         label_precio.setText("Precio:");
 
-        jButton1.setText("Agregar lista");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_addList.setText("Agregar lista");
+        btn_addList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_addListActionPerformed(evt);
             }
         });
 
@@ -262,12 +251,10 @@ public class GestionProductos extends javax.swing.JPanel {
                                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(label_dimens)
                                     .addComponent(ImageRenderer, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_addList, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(label_stock)
-                                    .addComponent(label_total))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(label_total)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())))
         );
@@ -297,7 +284,7 @@ public class GestionProductos extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(label_total)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_addList, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46))
         );
 
@@ -359,22 +346,29 @@ public class GestionProductos extends javax.swing.JPanel {
 
     private void buscar_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscar_buttonActionPerformed
 
-        System.out.println("Buscando: " + barra_busqueda.getText());
         updateTableData(database.getProductsByName(barra_busqueda.getText()));
         barra_busqueda.setText("");
     }//GEN-LAST:event_buscar_buttonActionPerformed
 
     private void categorias_boxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categorias_boxActionPerformed
-        //System.out.println("Categoria seleccionada: " + categorias_box.getSelectedItem());
+
         updateTableData(database.getProductsByCategory(categorias_box.getSelectedItem().toString()));
     }//GEN-LAST:event_categorias_boxActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btn_addListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addListActionPerformed
+
+        if(enLista){
+            usuario.removerProductoLista(selectedProduct);
+        }else{
+            double total = selectedProduct.getPrecio() * Integer.parseInt(input_cantidad.getValue().toString());
+            usuario.addItemLista(selectedProduct, total, Integer.parseInt(input_cantidad.getValue().toString()));
+        }
+        checkEnLista();
+        
+    }//GEN-LAST:event_btn_addListActionPerformed
 
     private void input_cantidadStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_input_cantidadStateChanged
-        double total = Double.parseDouble(selectedProduct.getPrecio()) * Integer.parseInt(input_cantidad.getValue().toString());
+        double total = selectedProduct.getPrecio() * Integer.parseInt(input_cantidad.getValue().toString());
         label_total.setText("<html><br>Total:</br> S/ "+total+"</html>");
     }//GEN-LAST:event_input_cantidadStateChanged
 
@@ -383,10 +377,10 @@ public class GestionProductos extends javax.swing.JPanel {
     private javax.swing.JLabel ImageRenderer;
     private javax.swing.JTable ProductsTable;
     private javax.swing.JTextField barra_busqueda;
+    private javax.swing.JButton btn_addList;
     private javax.swing.JButton buscar_button;
     private javax.swing.JComboBox<String> categorias_box;
     private javax.swing.JSpinner input_cantidad;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

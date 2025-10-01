@@ -76,7 +76,7 @@ private void setupTable() {
         // 2. Llena la tabla con los nuevos datos.
         for (Producto p : productos) {
             // Puedes mantener tu lógica de filtrado aquí si quieres.
-            if (Integer.parseInt(p.getStock()) > 1) {
+            if (p.getStock() > 1) {
                model.addRow(new Object[]{p.getNombre(), p.getMarca(), p.getPrecio(), p.getIdproducto()});
             }
         }

@@ -34,10 +34,7 @@ public class CSV_import {
                     String stock            = campos[9].trim();
                     String imagen           = campos[10].trim();
 
-                    productos.add(new Producto(
-                        categoria, dimensiones, especificaciones, idproducto,
-                        imagen, marca, modelo, nombre, peso, precio, stock
-                    ));
+                    productos.add(new Producto(idproducto, nombre, imagen, marca, Double.parseDouble(precio), Integer.parseInt(stock), modelo, categoria, dimensiones, especificaciones, Double.parseDouble(peso)));
                 }
             }
         } catch (IOException e) {

@@ -22,8 +22,8 @@ public class Dashboard extends javax.swing.JFrame {
     public Dashboard() {
         
         initComponents();
-        this.database = new DB_SIMULATOR();
-        this.usuario = new Usuario("Juan", true);
+        //this.database = new DB_SIMULATOR();
+        //this.usuario = new Usuario("Juan", true);
         //Detalles Producto panel 
         DetallesProducto dp1 = new DetallesProducto();
         dp1.setSize(508, 469);
